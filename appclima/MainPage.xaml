@@ -4,11 +4,10 @@
              x:Class="appclima.MainPage"
              Shell.NavBarIsVisible="false">
 
-    <Grid>
-      <Image Source="noiteestrelada.jpg"
-             Aspect="Fill"/>
+    
 
-    <Grid>
+    <Grid RowSpacing="10"
+          ColumnSpacing="10">        
      <Grid.RowDefinitions>
       <RowDefinition Height="*"/>
       <RowDefinition Height="80"/>
@@ -23,48 +22,54 @@
       <ColumnDefinition Width="*"/>
      </Grid.ColumnDefinitions>
 
+      <Image Source="noiteestrelada.jpg"
+             Aspect="AspectFill"
+             Grid.RowSpan="5"
+             Grid.ColumnSpan="3"/>
+
     <Frame CornerRadius="30"
-           BackgroundColor="Pink"
+           Margin="10,0,0,0"
+           Padding="0"
+           BackgroundColor="#88ffffff"
            Grid.Row="1"
            Grid.Column="0"
            Grid.RowSpan="2"/>
 
     <Frame CornerRadius="30"
-           BackgroundColor="Pink"
+           Padding="0"
+           BackgroundColor="#88ffffff"
            Grid.Row="1"
            Grid.Column="1"/>
 
     <Frame CornerRadius="30"
-           BackgroundColor="Pink"
+           Padding="0"
+           BackgroundColor="#88ffffff"
+           Margin="0,0,10,0"
            Grid.Row="1"
            Grid.Column="2"/>
 
     <Frame CornerRadius="30"
-           BackgroundColor="Pink"
+           Padding="0"
+           BackgroundColor="#88ffffff"
            Grid.Row="2"
            Grid.Column="1"/>
 
     <Frame CornerRadius="30"
-           BackgroundColor="Pink"
+           Padding="0"
+           Margin="0,0,10,0"
+           BackgroundColor="#88ffffff"
            Grid.Row="2"
            Grid.Column="2"/>
 
     <Frame CornerRadius="30"
-           BackgroundColor="Pink"
+           Padding="0"
+           BackgroundColor="#88ffffff"
+           Margin="10,0,10,10"
            Grid.Row="4"
            Grid.Column="0"
            Grid.ColumnSpan="3"/>
 
-
-       
-       </Grid>
-
                          
-</Grid>
-      
-
-
-         
-
+</Grid>     
 
 </ContentPage>
