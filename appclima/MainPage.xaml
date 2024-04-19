@@ -22,10 +22,10 @@
       <ColumnDefinition Width="*"/>
      </Grid.ColumnDefinitions>
 
-      <Image Source="noiteestrelada.jpg"
-             Aspect="AspectFill"
-             Grid.RowSpan="5"
-             Grid.ColumnSpan="3"/>
+    <Image Source="noiteestrelada.jpg"
+           Aspect="AspectFill"
+           Grid.RowSpan="5"
+           Grid.ColumnSpan="3"/>
 
     <Frame CornerRadius="30"
            Margin="10,0,0,0"
@@ -33,13 +33,39 @@
            BackgroundColor="#88ffffff"
            Grid.Row="1"
            Grid.Column="0"
-           Grid.RowSpan="2"/>
+           Grid.RowSpan="2">
+
+       <Label x:Name="Temperatura"
+              VerticalOpitions="Start">
+
+       <Label Text="°C"
+              >
+ 
+       <Label x:Name="Descricao"
+             >
+
+       <Label x:Name="Cidade"
+              >
+     </Grid>   
+       </Frame>
+          
 
     <Frame CornerRadius="30"
            Padding="0"
            BackgroundColor="#88ffffff"
            Grid.Row="1"
-           Grid.Column="1"/>
+           Grid.Column="1">
+
+
+       <Label Text="Chuva:"
+              >
+
+       <Label Text="Humidade:"
+              >
+
+       <Label x:Name="Cidade">
+       </VerticalStackLayout>  
+       </Frame>
 
     <Frame CornerRadius="30"
            Padding="0"

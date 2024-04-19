@@ -2,13 +2,21 @@
 
 public partial class MainPage : ContentPage
 {
-	int count = 0;
+	results Resultado;
+	
+
 
 	public MainPage()
 	{
 		InitializeComponent();
+        Resultado=new results();
+        PreencherTela();
 	}
-
+       
+	void PreencherTela()
+	{
+		
+	}
 	
 }
 
