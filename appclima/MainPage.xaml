@@ -6,48 +6,58 @@
 
     
 
-    <Grid RowSpacing="10"
-          ColumnSpacing="10">        
-     <Grid.RowDefinitions>
-      <RowDefinition Height="*"/>
-      <RowDefinition Height="80"/>
-      <RowDefinition Height="80"/>
-      <RowDefinition Height="*"/>
-      <RowDefinition Height="150"/>
-     </Grid.RowDefinitions>
+       <Grid RowSpacing="10"
+             ColumnSpacing="10">        
+              <Grid.RowDefinitions>
+              <RowDefinition Height="*"/>
+              <RowDefinition Height="80"/>
+              <RowDefinition Height="80"/>
+              <RowDefinition Height="*"/>
+              <RowDefinition Height="150"/>
+              </Grid.RowDefinitions>
 
-     <Grid.ColumnDefinitions>
-      <ColumnDefinition Width="*"/>
-      <ColumnDefinition Width="*"/>
-      <ColumnDefinition Width="*"/>
-     </Grid.ColumnDefinitions>
+              <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="*"/>
+              <ColumnDefinition Width="*"/>
+              <ColumnDefinition Width="*"/>
+              </Grid.ColumnDefinitions>
 
-    <Image Source="noiteestrelada.jpg"
-           Aspect="AspectFill"
-           Grid.RowSpan="5"
-           Grid.ColumnSpan="3"/>
+       <Image Source="noiteestrelada.jpg"
+              Aspect="AspectFill"
+              Grid.RowSpan="5"
+              Grid.ColumnSpan="3"/>
 
-    <Frame CornerRadius="30"
-           Margin="10,0,0,0"
-           Padding="0"
-           BackgroundColor="#88ffffff"
-           Grid.Row="1"
-           Grid.Column="0"
-           Grid.RowSpan="2">
+       <VerticalStackLayout>
+
+       <Frame CornerRadius="30"
+              Margin="10,0,0,0"
+              Padding="0"
+              BackgroundColor="#88ffffff"
+              Grid.Row="1"
+              Grid.Column="0"
+              Grid.RowSpan="2">
 
        <Label x:Name="Temperatura"
-              VerticalOpitions="Start">
+              VerticalOpitions="Start"
+              TextColor="Black"/>
 
        <Label Text="°C"
-              >
+              VerticalOpitions="Start"
+              HorizontalOpitions="End"
+              TextColor="Black"/>
  
        <Label x:Name="Descricao"
-             >
+              VerticalOpitions="End"
+              Margin="0,0,50,0"
+              TextColor="Black"/>
 
        <Label x:Name="Cidade"
-              >
-     </Grid>   
-       </Frame>
+              VerticalOpitions="End"
+              TextColor="Black"/>
+
+       </VerticalStackLayout>       
+    
+    </Frame>
           
 
     <Frame CornerRadius="30"
@@ -56,15 +66,31 @@
            Grid.Row="1"
            Grid.Column="1">
 
+        
+       <VerticalStackLayout>
 
        <Label Text="Chuva:"
-              >
+              VerticalOpitions="Start"
+              HorizontalOpitions="Start"
+              TextColor="Black"/>
 
        <Label Text="Humidade:"
-              >
+              VerticalOpitions="End"
+              HorizontalOpitions="Start"
+              TextColor="Black"/>
 
-       <Label x:Name="Cidade">
+       <Label x:Name="ValorChuva"
+              VerticalOpitions="Start"
+              HorizontalOpitions="End"
+              TextColor="Black"/>
+
+       <Label x:Name="ValorHumidade"
+              VerticalOpitions="End"
+              HorizontalOpitions="End"
+              TextColor="Black"/>       
+
        </VerticalStackLayout>  
+
        </Frame>
 
     <Frame CornerRadius="30"
@@ -72,13 +98,75 @@
            BackgroundColor="#88ffffff"
            Margin="0,0,10,0"
            Grid.Row="1"
-           Grid.Column="2"/>
+           Grid.Column="2">
+
+        <VerticalStackLayout>
+
+       <Label Text="Vento"
+              VerticalOpitions="Start"
+              HorizontalOpitions="Center"
+              TextColor="Black"/>
+
+       <Label Text="Força:"
+              VerticalOpitions="Center"
+              HorizontalOpitions="Start"
+              TextColor="Black"/>
+
+       <Label Text="Direção:"
+              VerticalOpitions="End"
+              HorizontalOpitions="Start"
+              TextColor="Black"/>
+
+       <Label x:Name="ValorForca"
+              VerticalOpitions="Center"
+              HorizontalOpitions="End"
+              TextColor="Black"/>     
+
+       <Label x:Name="ValorDirecao"
+              VerticalOpitions="End"
+              HorizontalOpitions="End"
+              TextColor="Black"/>          
+
+       </VerticalStackLayout>  
+
+       </Frame>   
 
     <Frame CornerRadius="30"
            Padding="0"
            BackgroundColor="#88ffffff"
            Grid.Row="2"
-           Grid.Column="1"/>
+           Grid.Column="1">
+
+        <VerticalStackLayout>
+
+       <Label Text="Sol"
+              VerticalOpitions="Start"
+              HorizontalOpitions="Center"
+              TextColor="Black"/>
+
+       <Label Text="Amanhecer:"
+              VerticalOpitions="Center"
+              HorizontalOpitions="Start"
+              TextColor="Black"/>
+
+       <Label Text="Anoitecer:"
+              VerticalOpitions="End"
+              HorizontalOpitions="Start"
+              TextColor="Black"/>
+
+       <Label x:Name="ValorAmanhecer"
+              VerticalOpitions="Center"
+              HorizontalOpitions="End"
+              TextColor="Black"/>     
+
+       <Label x:Name="ValorAnoitecer"
+              VerticalOpitions="End"
+              HorizontalOpitions="End"
+              TextColor="Black"/>          
+
+       </VerticalStackLayout>
+
+    </Frame>      
 
     <Frame CornerRadius="30"
            Padding="0"
@@ -86,6 +174,27 @@
            BackgroundColor="#88ffffff"
            Grid.Row="2"
            Grid.Column="2"/>
+
+        <VerticalStackLayout>
+
+       <Label Text="Lua"
+              VerticalOpitions="Start"
+              HorizontalOpitions="Center"
+              TextColor="Black"/>
+
+       <Label Text="Fase:"
+              VerticalOpitions="Center"
+              HorizontalOpitions="Start"
+              TextColor="Black"/>
+
+       <Label x:Name="FaseDaLua"
+              VerticalOpitions="Center"
+              HorizontalOpitions="End"
+              TextColor="Black"/>           
+
+       </VerticalStackLayout>  
+
+    </Frame>
 
     <Frame CornerRadius="30"
            Padding="0"
