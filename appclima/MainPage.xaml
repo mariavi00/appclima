@@ -26,8 +26,7 @@
               Aspect="AspectFill"
               Grid.RowSpan="5"
               Grid.ColumnSpan="3"/>
-
-       <VerticalStackLayout>
+      
 
        <Frame CornerRadius="30"
               Margin="10,0,0,0"
@@ -36,26 +35,45 @@
               Grid.Row="1"
               Grid.Column="0"
               Grid.RowSpan="2">
+       <Grid>
+             <Grid.RowDefinitions>
+              <RowDefinition Height="*"/>
+              <RowDefinition Height="50"/>
+              <RowDefinition Height="50"/>
+              </Grid.RowDefinitions>
+
+              <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="*"/>
+              <ColumnDefinition Width="15"/>
+              </Grid.ColumnDefinitions>
 
        <Label x:Name="Temperatura"
-              VerticalOpitions="Start"
-              TextColor="Black"/>
+              VerticalOptions="Start"
+              TextColor="Black"
+              Grid.Row="0"
+              Grid.Column="0"/>
 
        <Label Text="°C"
-              VerticalOpitions="Start"
-              HorizontalOpitions="End"
-              TextColor="Black"/>
+              VerticalOptions="Start"
+              HorizontalOptions="End"
+              TextColor="Black"
+              Grid.Row="0"
+              Grid.Column="1"/>
  
        <Label x:Name="Descricao"
-              VerticalOpitions="End"
+              VerticalOptions="End"
               Margin="0,0,50,0"
-              TextColor="Black"/>
+              TextColor="Black"
+              Grid.Row="1"
+              Grid.ColumnSpan="2"/>
 
        <Label x:Name="Cidade"
-              VerticalOpitions="End"
-              TextColor="Black"/>
+              VerticalOptions="End"
+              TextColor="Black"
+              Grid.Row="2"
+              Grid.ColumnSpan="2"/>
 
-       </VerticalStackLayout>       
+       </Grid>       
     
     </Frame>
           
@@ -67,29 +85,46 @@
            Grid.Column="1">
 
         
-       <VerticalStackLayout>
+       <Grid>
+              <Grid.RowDefinitions>
+              <RowDefinition Height="*"/>
+              <RowDefinition Height="*"/>
+              </Grid.RowDefinitions>
+
+              <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="*"/>
+              <ColumnDefinition Width="15"/>
+              </Grid.ColumnDefinitions>
 
        <Label Text="Chuva:"
-              VerticalOpitions="Start"
-              HorizontalOpitions="Start"
-              TextColor="Black"/>
+              VerticalOptions="Start"
+              HorizontalOptions="Start"
+              TextColor="Black"
+              Grid.Row="0"
+              Grid.Column="0"/>
 
        <Label Text="Humidade:"
-              VerticalOpitions="End"
-              HorizontalOpitions="Start"
-              TextColor="Black"/>
+              VerticalOptions="End"
+              HorizontalOptions="Start"
+              TextColor="Black"
+              Grid.Row="1"
+              Grid.Column="0"/>
 
        <Label x:Name="ValorChuva"
-              VerticalOpitions="Start"
-              HorizontalOpitions="End"
-              TextColor="Black"/>
+              VerticalOptions="Start"
+              HorizontalOptions="End"
+              TextColor="Black"
+              Grid.Row="0"
+              Grid.Column="1"/>
 
        <Label x:Name="ValorHumidade"
-              VerticalOpitions="End"
-              HorizontalOpitions="End"
-              TextColor="Black"/>       
+              VerticalOptions="End"
+              HorizontalOptions="End"
+              TextColor="Black"
+              Grid.Row="1"
+              Grid.Column="1"/>       
 
-       </VerticalStackLayout>  
+       </Grid>  
 
        </Frame>
 
@@ -100,34 +135,54 @@
            Grid.Row="1"
            Grid.Column="2">
 
-        <VerticalStackLayout>
+        <Grid>
+              <Grid.RowDefinitions>
+              <RowDefinition Height="*"/>
+              <RowDefinition Height="*"/>
+              <RowDefinition Height="*"/>
+              </Grid.RowDefinitions>
+
+              <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="*"/>
+              <ColumnDefinition Width="15"/>
+              </Grid.ColumnDefinitions>
 
        <Label Text="Vento"
-              VerticalOpitions="Start"
-              HorizontalOpitions="Center"
-              TextColor="Black"/>
+              VerticalOptions="Start"
+              HorizontalOptions="Center"
+              TextColor="Black"
+              Grid.Row="0"
+              Grid.ColumnSpan="2"/>
 
        <Label Text="Força:"
-              VerticalOpitions="Center"
-              HorizontalOpitions="Start"
-              TextColor="Black"/>
+              VerticalOptions="Center"
+              HorizontalOptions="Start"
+              TextColor="Black"
+              Grid.Row="1"
+              Grid.Column="0"/>
 
        <Label Text="Direção:"
-              VerticalOpitions="End"
-              HorizontalOpitions="Start"
-              TextColor="Black"/>
+              VerticalOptions="End"
+              HorizontalOptions="Start"
+              TextColor="Black"
+              Grid.Row="2"
+              Grid.Column="0"/>
 
        <Label x:Name="ValorForca"
-              VerticalOpitions="Center"
-              HorizontalOpitions="End"
-              TextColor="Black"/>     
+              VerticalOptions="Center"
+              HorizontalOptions="End"
+              TextColor="Black"
+              Grid.Row="1"
+              Grid.Column="1"/>     
 
        <Label x:Name="ValorDirecao"
-              VerticalOpitions="End"
-              HorizontalOpitions="End"
-              TextColor="Black"/>          
+              VerticalOptions="End"
+              HorizontalOptions="End"
+              TextColor="Black"
+              Grid.Row="2"
+              Grid.Column="1"/>          
 
-       </VerticalStackLayout>  
+       </Grid>  
 
        </Frame>   
 
@@ -137,34 +192,55 @@
            Grid.Row="2"
            Grid.Column="1">
 
-        <VerticalStackLayout>
+        <Grid>
+              <Grid.RowDefinitions>
+              <RowDefinition Height="*"/>
+              <RowDefinition Height="*"/>
+              <RowDefinition Height="*"/>
+              </Grid.RowDefinitions>
+
+              <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="*"/>
+              <ColumnDefinition Width="15"/>
+              </Grid.ColumnDefinitions>
+
 
        <Label Text="Sol"
-              VerticalOpitions="Start"
-              HorizontalOpitions="Center"
-              TextColor="Black"/>
+              VerticalOptions="Start"
+              HorizontalOptions="Center"
+              TextColor="Black"
+              Grid.Row="0"
+              Grid.ColumnSpan="2"/>
 
        <Label Text="Amanhecer:"
-              VerticalOpitions="Center"
-              HorizontalOpitions="Start"
-              TextColor="Black"/>
+              VerticalOptions="Center"
+              HorizontalOptions="Start"
+              TextColor="Black"
+              Grid.Row="1"
+              Grid.Column="0"/>
 
        <Label Text="Anoitecer:"
-              VerticalOpitions="End"
-              HorizontalOpitions="Start"
-              TextColor="Black"/>
+              VerticalOptions="End"
+              HorizontalOptions="Start"
+              TextColor="Black"
+              Grid.Row="2"
+              Grid.Column="0"/>
 
        <Label x:Name="ValorAmanhecer"
-              VerticalOpitions="Center"
-              HorizontalOpitions="End"
-              TextColor="Black"/>     
+              VerticalOptions="Center"
+              HorizontalOptions="End"
+              TextColor="Black"
+              Grid.Row="1"
+              Grid.Column="1"/>     
 
        <Label x:Name="ValorAnoitecer"
-              VerticalOpitions="End"
-              HorizontalOpitions="End"
-              TextColor="Black"/>          
+              VerticalOptions="End"
+              HorizontalOptions="End"
+              TextColor="Black"
+              Grid.Row="2"
+              Grid.Column="1"/>          
 
-       </VerticalStackLayout>
+       </Grid>
 
     </Frame>      
 
@@ -175,24 +251,40 @@
            Grid.Row="2"
            Grid.Column="2"/>
 
-        <VerticalStackLayout>
+        <Grid>
+              <Grid.RowDefinitions>
+              <RowDefinition Height="*"/>
+              <RowDefinition Height="*"/>
+              </Grid.RowDefinitions>
+
+              <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="*"/>
+              <ColumnDefinition Width="15"/>
+              </Grid.ColumnDefinitions>
+
 
        <Label Text="Lua"
-              VerticalOpitions="Start"
-              HorizontalOpitions="Center"
-              TextColor="Black"/>
+              VerticalOptions="Start"
+              HorizontalOptions="Center"
+              TextColor="Black"
+              Grid.Row="0"
+              Grid.ColumnSpan="2"/>
 
        <Label Text="Fase:"
-              VerticalOpitions="Center"
-              HorizontalOpitions="Start"
-              TextColor="Black"/>
+              VerticalOptions="Center"
+              HorizontalOptions="Start"
+              TextColor="Black"
+              Grid.Row="1"
+              Grid.Column="0"/>
 
        <Label x:Name="FaseDaLua"
-              VerticalOpitions="Center"
-              HorizontalOpitions="End"
-              TextColor="Black"/>           
+              VerticalOptions="Center"
+              HorizontalOptions="End"
+              TextColor="Black"
+              Grid.Row="1"
+              Grid.Column="1"/>           
 
-       </VerticalStackLayout>  
+       </Grid>  
 
     </Frame>
 
