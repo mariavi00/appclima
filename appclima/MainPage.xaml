@@ -22,7 +22,7 @@
               <ColumnDefinition Width="*"/>
               </Grid.ColumnDefinitions>
 
-       <Image Source="noiteestrelada.jpg"
+       <Image x:Name="imgFundo"
               Aspect="AspectFill"
               Grid.RowSpan="5"
               Grid.ColumnSpan="3"/>
@@ -48,27 +48,24 @@
               </Grid.ColumnDefinitions>
 
        <Label x:Name="Temperatura"
-              VerticalOptions="Start"
               TextColor="Black"
               Grid.Row="0"
               Grid.Column="0"/>
 
        <Label Text="°C"
-              VerticalOptions="Start"
-              HorizontalOptions="End"
               TextColor="Black"
               Grid.Row="0"
               Grid.Column="1"/>
  
        <Label x:Name="Descricao"
-              VerticalOptions="End"
+             
               Margin="0,0,50,0"
               TextColor="Black"
               Grid.Row="1"
               Grid.ColumnSpan="2"/>
 
        <Label x:Name="Cidade"
-              VerticalOptions="End"
+             
               TextColor="Black"
               Grid.Row="2"
               Grid.ColumnSpan="2"/>
@@ -97,29 +94,25 @@
               </Grid.ColumnDefinitions>
 
        <Label Text="Chuva:"
-              VerticalOptions="Start"
-              HorizontalOptions="Start"
+              
               TextColor="Black"
               Grid.Row="0"
               Grid.Column="0"/>
 
        <Label Text="Humidade:"
-              VerticalOptions="End"
-              HorizontalOptions="Start"
+             
               TextColor="Black"
               Grid.Row="1"
               Grid.Column="0"/>
 
        <Label x:Name="ValorChuva"
-              VerticalOptions="Start"
-              HorizontalOptions="End"
+             
               TextColor="Black"
               Grid.Row="0"
               Grid.Column="1"/>
 
        <Label x:Name="ValorHumidade"
-              VerticalOptions="End"
-              HorizontalOptions="End"
+              
               TextColor="Black"
               Grid.Row="1"
               Grid.Column="1"/>       
@@ -148,36 +141,31 @@
               </Grid.ColumnDefinitions>
 
        <Label Text="Vento"
-              VerticalOptions="Start"
-              HorizontalOptions="Center"
+              
               TextColor="Black"
               Grid.Row="0"
               Grid.ColumnSpan="2"/>
 
        <Label Text="Força:"
-              VerticalOptions="Center"
-              HorizontalOptions="Start"
+              
               TextColor="Black"
               Grid.Row="1"
               Grid.Column="0"/>
 
        <Label Text="Direção:"
-              VerticalOptions="End"
-              HorizontalOptions="Start"
+             
               TextColor="Black"
               Grid.Row="2"
               Grid.Column="0"/>
 
        <Label x:Name="ValorForca"
-              VerticalOptions="Center"
-              HorizontalOptions="End"
+             
               TextColor="Black"
               Grid.Row="1"
               Grid.Column="1"/>     
 
        <Label x:Name="ValorDirecao"
-              VerticalOptions="End"
-              HorizontalOptions="End"
+             
               TextColor="Black"
               Grid.Row="2"
               Grid.Column="1"/>          
@@ -206,36 +194,31 @@
 
 
        <Label Text="Sol"
-              VerticalOptions="Start"
-              HorizontalOptions="Center"
+              
               TextColor="Black"
               Grid.Row="0"
               Grid.ColumnSpan="2"/>
 
        <Label Text="Amanhecer:"
-              VerticalOptions="Center"
-              HorizontalOptions="Start"
+             
               TextColor="Black"
               Grid.Row="1"
               Grid.Column="0"/>
 
        <Label Text="Anoitecer:"
-              VerticalOptions="End"
-              HorizontalOptions="Start"
+             
               TextColor="Black"
               Grid.Row="2"
               Grid.Column="0"/>
 
        <Label x:Name="ValorAmanhecer"
-              VerticalOptions="Center"
-              HorizontalOptions="End"
+              
               TextColor="Black"
               Grid.Row="1"
               Grid.Column="1"/>     
 
        <Label x:Name="ValorAnoitecer"
-              VerticalOptions="End"
-              HorizontalOptions="End"
+             
               TextColor="Black"
               Grid.Row="2"
               Grid.Column="1"/>          
@@ -264,22 +247,18 @@
 
 
        <Label Text="Lua"
-              VerticalOptions="Start"
-              HorizontalOptions="Center"
+             
               TextColor="Black"
               Grid.Row="0"
               Grid.ColumnSpan="2"/>
 
        <Label Text="Fase:"
-              VerticalOptions="Center"
-              HorizontalOptions="Start"
+              
               TextColor="Black"
               Grid.Row="1"
               Grid.Column="0"/>
 
        <Label x:Name="FaseDaLua"
-              VerticalOptions="Center"
-              HorizontalOptions="End"
               TextColor="Black"
               Grid.Row="1"
               Grid.Column="1"/>           

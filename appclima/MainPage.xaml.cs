@@ -26,13 +26,11 @@ public partial class MainPage : ContentPage
 
 		}
 	}
-
-
 	public MainPage()
 	{
 		InitializeComponent();
-        Resultado=new results();
-        PreencherTela();
+
+       
 		AtualizaTempo();
 	}
        
@@ -47,6 +45,28 @@ public partial class MainPage : ContentPage
 		ValorAmanhecer.Text=resposta.results.sunrise;
 		ValorAnoitecer.Text=resposta.results.sunset;
 		FaseDaLua.Text=resposta.results.moon_phase;
+		Descricao.Text=resposta.results.claudiness.ToString();
+
+		if (resposta.results.currently=="dia")
+		{
+			if (resposta.results.rain>=5)
+			imgFundo.Source="diachuvoso.jpg";
+			else if (resposta.results.claudiness>=5)
+			imgFundo.Source="ceunublado.png";
+			else 
+			imgFundo.Source="ceuazul.png";
+
+		}
+		else
+		{
+			if (resposta.results.rain>=5)
+			imgFundo.Source="noitechuvosa.png";
+			else if (resposta.results.claudiness>=5)
+			imgFundo.Source="noitenublada.png";
+			else 
+			imgFundo.Source="noiteestrelada.jpg";
+		}
+
 		  
 	}	
 	
