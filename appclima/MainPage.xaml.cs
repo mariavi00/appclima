@@ -19,7 +19,7 @@ public partial class MainPage : ContentPage
 				var content=await response.Content.ReadAsStringAsync();
 				resposta=JsonSerializer.Deserialize<Resposta>(content);
 			}
-			PreeencherTela();
+			PreencherTela();
 		}
 		catch(Exception e)
 		{
@@ -36,7 +36,8 @@ public partial class MainPage : ContentPage
        
 	void PreencherTela()
 	{
-		Temperatura.Text=resposta.results.Temp.ToString();
+		Temperatura.Text=resposta.results.temp.ToString();
+		Descricao.Text=resposta.results.description;
 		Cidade.Text=resposta.results.city;
 		ValorChuva.Text=resposta.results.rain.ToString();
 		ValorHumidade.Text=resposta.results.humidity.ToString();
@@ -44,8 +45,23 @@ public partial class MainPage : ContentPage
 		ValorDirecao.Text=resposta.results.wind_direction.ToString();
 		ValorAmanhecer.Text=resposta.results.sunrise;
 		ValorAnoitecer.Text=resposta.results.sunset;
-		FaseDaLua.Text=resposta.results.moon_phase;
-		Descricao.Text=resposta.results.claudiness.ToString();
+	   
+	    if(resposta.results.moon_phase=="new")
+			FaseDaLua.Text="Lua nova";
+		else if(resposta.results.moon_phase=="waxing_crescent")
+			FaseDaLua.Text="Lua crescente";
+		else if(resposta.results.moon_phase=="first_quarter")
+			FaseDaLua.Text="Quarto crescente";
+		else if(resposta.results.moon_phase=="waxing_gibbous")
+			FaseDaLua.Text="Gibosa crescente";
+		else if(resposta.results.moon_phase=="waning_gibbous")
+			FaseDaLua.Text="Gibosa minguante";
+		else if(resposta.results.moon_phase=="full")
+			FaseDaLua.Text="Lua cheia";
+		else if(resposta.results.moon_phase=="last_quarter")
+			FaseDaLua.Text="Quarto minguante";
+		else if(resposta.results.moon_phase=="waning_crescent")
+			FaseDaLua.Text="Lua minguante";
 
 		if (resposta.results.currently=="dia")
 		{

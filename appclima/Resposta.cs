@@ -1,5 +1,5 @@
 namespace appclima;
-public class Resposta:results
+public class Resposta
 {
     public results results{get; set;}
 }

@@ -6,8 +6,8 @@
 
     
 
-       <Grid RowSpacing="10"
-             ColumnSpacing="10">        
+       <Grid  RowSpacing="10"
+              ColumnSpacing="10">        
               <Grid.RowDefinitions>
               <RowDefinition Height="*"/>
               <RowDefinition Height="80"/>
@@ -30,7 +30,7 @@
 
        <Frame CornerRadius="30"
               Margin="10,0,0,0"
-              Padding="0"
+              Padding="15"
               BackgroundColor="#88ffffff"
               Grid.Row="1"
               Grid.Column="0"
@@ -43,8 +43,8 @@
               </Grid.RowDefinitions>
 
               <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="40"/>
               <ColumnDefinition Width="*"/>
-              <ColumnDefinition Width="15"/>
               </Grid.ColumnDefinitions>
 
        <Label x:Name="Temperatura"
@@ -57,29 +57,27 @@
               Grid.Row="0"
               Grid.Column="1"/>
  
-       <Label x:Name="Descricao"
-             
+       <Label x:Name="Descricao"            
               Margin="0,0,50,0"
               TextColor="Black"
               Grid.Row="1"
               Grid.ColumnSpan="2"/>
 
-       <Label x:Name="Cidade"
-             
+       <Label x:Name="Cidade"            
               TextColor="Black"
               Grid.Row="2"
               Grid.ColumnSpan="2"/>
 
        </Grid>       
     
-    </Frame>
+       </Frame>
           
 
-    <Frame CornerRadius="30"
-           Padding="0"
-           BackgroundColor="#88ffffff"
-           Grid.Row="1"
-           Grid.Column="1">
+       <Frame CornerRadius="30"
+              Padding="15"
+              BackgroundColor="#88ffffff"
+              Grid.Row="1"
+              Grid.Column="1">
 
         
        <Grid>
@@ -89,30 +87,26 @@
               </Grid.RowDefinitions>
 
               <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="80"/>
               <ColumnDefinition Width="*"/>
-              <ColumnDefinition Width="15"/>
               </Grid.ColumnDefinitions>
 
-       <Label Text="Chuva:"
-              
+       <Label Text="Chuva:"              
               TextColor="Black"
               Grid.Row="0"
               Grid.Column="0"/>
 
-       <Label Text="Humidade:"
-             
+       <Label Text="Humidade:"             
               TextColor="Black"
               Grid.Row="1"
               Grid.Column="0"/>
 
-       <Label x:Name="ValorChuva"
-             
+       <Label x:Name="ValorChuva"             
               TextColor="Black"
               Grid.Row="0"
               Grid.Column="1"/>
 
-       <Label x:Name="ValorHumidade"
-              
+       <Label x:Name="ValorHumidade"             
               TextColor="Black"
               Grid.Row="1"
               Grid.Column="1"/>       
@@ -121,14 +115,14 @@
 
        </Frame>
 
-    <Frame CornerRadius="30"
-           Padding="0"
-           BackgroundColor="#88ffffff"
-           Margin="0,0,10,0"
-           Grid.Row="1"
-           Grid.Column="2">
+       <Frame CornerRadius="30"
+              Padding="15"
+              BackgroundColor="#88ffffff"
+              Margin="0,0,10,0"
+              Grid.Row="1"
+              Grid.Column="2">
 
-        <Grid>
+       <Grid>
               <Grid.RowDefinitions>
               <RowDefinition Height="*"/>
               <RowDefinition Height="*"/>
@@ -136,36 +130,32 @@
               </Grid.RowDefinitions>
 
               <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="55"/>
               <ColumnDefinition Width="*"/>
-              <ColumnDefinition Width="15"/>
               </Grid.ColumnDefinitions>
 
        <Label Text="Vento"
-              
+              HorizontalTextAlignment="Center"
               TextColor="Black"
               Grid.Row="0"
               Grid.ColumnSpan="2"/>
 
-       <Label Text="Força:"
-              
+       <Label Text="Força:"              
               TextColor="Black"
               Grid.Row="1"
               Grid.Column="0"/>
 
-       <Label Text="Direção:"
-             
+       <Label Text="Direção:"            
               TextColor="Black"
               Grid.Row="2"
               Grid.Column="0"/>
 
-       <Label x:Name="ValorForca"
-             
+       <Label x:Name="ValorForca"            
               TextColor="Black"
               Grid.Row="1"
               Grid.Column="1"/>     
 
-       <Label x:Name="ValorDirecao"
-             
+       <Label x:Name="ValorDirecao"             
               TextColor="Black"
               Grid.Row="2"
               Grid.Column="1"/>          
@@ -174,13 +164,13 @@
 
        </Frame>   
 
-    <Frame CornerRadius="30"
-           Padding="0"
-           BackgroundColor="#88ffffff"
-           Grid.Row="2"
-           Grid.Column="1">
+       <Frame CornerRadius="30"
+              Padding="15"
+              BackgroundColor="#88ffffff"
+              Grid.Row="2"
+              Grid.Column="1">
 
-        <Grid>
+       <Grid>
               <Grid.RowDefinitions>
               <RowDefinition Height="*"/>
               <RowDefinition Height="*"/>
@@ -188,72 +178,67 @@
               </Grid.RowDefinitions>
 
               <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="80"/>
               <ColumnDefinition Width="*"/>
-              <ColumnDefinition Width="15"/>
               </Grid.ColumnDefinitions>
 
 
-       <Label Text="Sol"
-              
+       <Label Text="Sol"              
               TextColor="Black"
+              HorizontalTextAlignment="Center"
               Grid.Row="0"
               Grid.ColumnSpan="2"/>
 
-       <Label Text="Amanhecer:"
-             
+       <Label Text="Amanhecer:"             
               TextColor="Black"
               Grid.Row="1"
               Grid.Column="0"/>
 
-       <Label Text="Anoitecer:"
-             
+       <Label Text="Anoitecer:"             
               TextColor="Black"
               Grid.Row="2"
               Grid.Column="0"/>
 
-       <Label x:Name="ValorAmanhecer"
-              
+       <Label x:Name="ValorAmanhecer"              
               TextColor="Black"
               Grid.Row="1"
               Grid.Column="1"/>     
 
-       <Label x:Name="ValorAnoitecer"
-             
+       <Label x:Name="ValorAnoitecer"             
               TextColor="Black"
               Grid.Row="2"
               Grid.Column="1"/>          
 
        </Grid>
 
-    </Frame>      
+       </Frame>      
 
-    <Frame CornerRadius="30"
-           Padding="0"
-           Margin="0,0,10,0"
-           BackgroundColor="#88ffffff"
-           Grid.Row="2"
-           Grid.Column="2"/>
+       <Frame CornerRadius="30"
+              Padding="15"
+              Margin="0,0,10,0"
+              BackgroundColor="#88ffffff"
+              Grid.Row="2"
+              Grid.Column="2">
 
-        <Grid>
+       <Grid>
               <Grid.RowDefinitions>
               <RowDefinition Height="*"/>
               <RowDefinition Height="*"/>
               </Grid.RowDefinitions>
 
               <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="40"/>
               <ColumnDefinition Width="*"/>
-              <ColumnDefinition Width="15"/>
               </Grid.ColumnDefinitions>
 
 
-       <Label Text="Lua"
-             
+       <Label Text="Lua"      
+              HorizontalTextAlignment="Center"     
               TextColor="Black"
               Grid.Row="0"
               Grid.ColumnSpan="2"/>
 
-       <Label Text="Fase:"
-              
+       <Label Text="Fase:"              
               TextColor="Black"
               Grid.Row="1"
               Grid.Column="0"/>
@@ -265,17 +250,17 @@
 
        </Grid>  
 
-    </Frame>
+       </Frame>
 
-    <Frame CornerRadius="30"
-           Padding="0"
-           BackgroundColor="#88ffffff"
-           Margin="10,0,10,10"
-           Grid.Row="4"
-           Grid.Column="0"
-           Grid.ColumnSpan="3"/>
+       <Frame CornerRadius="30"
+              Padding="15"
+              BackgroundColor="#88ffffff"
+              Margin="10,0,10,10"
+              Grid.Row="4"
+              Grid.Column="0"
+              Grid.ColumnSpan="3"/>
 
                          
-</Grid>     
+       </Grid>     
 
 </ContentPage>
